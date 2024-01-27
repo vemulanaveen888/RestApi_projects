@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Spring</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+
+    
+	<servlet>  
+    <servlet-name>spring</servlet-name>  
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>  
+    <load-on-startup>1</load-on-startup>  
+</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Report</display-name>
+		<servlet-name>Report</servlet-name>
+		<servlet-class>com.utils.Report</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ReportEmp</display-name>
+		<servlet-name>ReportEmp</servlet-name>
+		<servlet-class>com.utils.ReportEmp</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ReportCon</display-name>
+		<servlet-name>ReportCon</servlet-name>
+		<servlet-class>com.utils.ReportCon</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>taskreport</display-name>
+		<servlet-name>taskreport</servlet-name>
+		<servlet-class>com.utils.taskreport</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>materialreport</display-name>
+		<servlet-name>materialreport</servlet-name>
+		<servlet-class>com.utils.materialreport</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>employeereport</display-name>
+		<servlet-name>employeereport</servlet-name>
+		<servlet-class>com.utils.employeereport</servlet-class>
+	</servlet>  
+<servlet-mapping>  
+    <servlet-name>spring</servlet-name>  
+    <url-pattern>*.html</url-pattern>  
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Report</servlet-name>
+	<url-pattern>/Report</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ReportEmp</servlet-name>
+	<url-pattern>/ReportEmp</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>ReportCon</servlet-name>
+	<url-pattern>/ReportCon</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>taskreport</servlet-name>
+	<url-pattern>/taskreport</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>materialreport</servlet-name>
+	<url-pattern>/materialreport</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>employeereport</servlet-name>
+	<url-pattern>/employeereport</url-pattern>
+</servlet-mapping>  
+</web-app>
